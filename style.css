@@ -27,6 +27,10 @@ h2 {
 	font-size: 2.5rem;
 }
 
+h3 {
+	margin: 50px 0;
+}
+
 nav {
 	height: 100px;
 }
@@ -39,7 +43,7 @@ header {
 /* container to set width of page content */	
 .container_main {
 	margin: auto;
-	width: 80%;
+	width: 81%;
 	
 }
 
@@ -59,6 +63,8 @@ header {
 	
 }
 
+/* main intro callout box */
+
 .callout {
 	display: inline;
 	overflow: auto;
@@ -75,4 +81,33 @@ header {
 	position: relative;
 	right: 10%;
 }
+
+/* portfolio section */
+
+.portfolio_box {
+		display: flex;
+}
+
+.box1, .box2, .box3  {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px 20px;
+	width: 33%;
+	height: 300px;
+}
+
+.box1 {
+		background-color: #FFE2D1;
+}
+
+.box2 {
+	background-color: #6BC4BA;
+}
+
+.box3 {
+	background-color: #DBDBDB;
+}
+
+
+
 
