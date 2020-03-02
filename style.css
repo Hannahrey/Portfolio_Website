@@ -50,7 +50,9 @@ header {
 
 footer {
 	background-color: #F7D320;
-	height: 80px;
+	height: 50px;
+	overflow: auto;
+
 }
 
 /* container to set width of page content */	
@@ -65,8 +67,10 @@ footer {
 	text-align: center;
 }
 
+
 /* nav bar */
 
+/* box containing my 'logo' */
 .title {
 	float: left;
 	width: 200px;
@@ -94,10 +98,10 @@ footer {
 }
 
 .logo_dot {
-	float: right;
-	position: relative;
 	color: #F7D320;
 }
+
+
 
 /* main intro callout box */
 
@@ -108,10 +112,12 @@ footer {
 	width: 80%;
 }
 
+/* 'hey there' text */
 .callout_left {
 	float: left;
 }
 
+/* 'nice to see you' text */
 .callout_right {
 	float: right;
 	position: relative;
@@ -148,6 +154,8 @@ footer {
 		margin: 10px 0 40px 0;
 }
 
+
+/* portfolio section- these 3 boxes sit next to each other */
 .box1, .box2, .box3  {
 
 	padding: 0;
@@ -167,7 +175,7 @@ footer {
 .box3 {
 	background-color: #DBDBDB;
 }
-
+/* portfolio section- these 2 boxes sit next to each other */
 .box4, .box5 {
 
 	padding: 0;
@@ -192,3 +200,20 @@ footer {
 	background-color: #6BC4BA;
 }
 
+
+/* footer section */
+
+.copyright {
+	float: left;
+	font-weight: 200;
+	font-style: italic;
+	display: inline;
+}
+
+
+.to_top {
+	float: right;
+	display: inline-block;
+	margin: 16px auto;
+	font-weight: 700;
+}
