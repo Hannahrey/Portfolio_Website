@@ -1,0 +1,58 @@
+body {
+	font-family: 'Futura', 'Helvetica', sans-serif;
+	
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500; 
+	letter-spacing: 0.05rem;
+	color: #000000;
+}
+
+
+h1, h2 {
+	text-transform: lowercase;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 5rem;
+	line-height: 6rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+nav {
+	height: 100px;
+}
+
+header {
+	background-color: #F7D320;
+	height: 400px;
+}
+
+/* container to set width of page content */	
+.container_main {
+	margin: auto;
+	width: 80%;
+	
+}
+
+/* to center text */
+.text_center {
+	text-align: center;
+}
+
+.title {
+	float: left;
+
+}
+
+.top_nav_content {
+	float: right;
+	
+	
+}
