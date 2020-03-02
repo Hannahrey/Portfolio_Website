@@ -2,14 +2,6 @@ body {
 	font-family: 'Futura', 'Helvetica', sans-serif;
 	
 }
-a {
-	display: inline-block;
-	text-decoration: none;
-	font-weight: 500; 
-	letter-spacing: 0.05rem;
-	margin: 41px 20px;
-	color: #000000;
-}
 
 
 h1, h2 {
@@ -62,12 +54,6 @@ footer {
 	
 }
 
-/* to center text */
-.text_center {
-	text-align: center;
-}
-
-
 /* nav bar */
 
 /* box containing my 'logo' */
@@ -101,6 +87,20 @@ footer {
 	color: #F7D320;
 }
 
+a {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500; 
+	letter-spacing: 0.05rem;
+	margin: 40px 20px;
+	color: #000000;
+}
+
+
+/* for any anchor tags in the nav bar, when hover over: */
+nav a:hover {
+	border-bottom: 1px solid #000000;
+} 
 
 
 /* main intro callout box */
