@@ -97,6 +97,17 @@ nav a:hover {
 	border-bottom: 1px solid #000000;
 } 
 
+/* pseudo element to ensure the anchor tag goes to top of section (as fixed header was blocking this before): */
+#about, #portfolio, #contact::before { 
+	display: block; 
+	content: " "; 
+	margin-top: -120px; 
+	height: 120px; 
+	visibility: hidden; 
+	pointer-events: none;
+  }
+
+
 
 /* main intro callout box */
 
@@ -160,7 +171,7 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin: 10px 0 40px 0;
+		margin: 10px 0 150px 0;
 }
 
 
@@ -205,7 +216,7 @@ header {
 /* contact section */
 
 .contact_panel {
-	height: 300px;
+	height: 500px;
 	/*background-color: #6BC4BA;*/
 	background-color: #DBDBDB;
 }
@@ -224,6 +235,8 @@ footer {
 	float: left;
 	font-weight: 200;
 	font-style: italic;
+	font-family: 'Futura', 'Helvetica', sans-serif;
+	font-size: 0.8rem;
 	display: inline;
 }
 
