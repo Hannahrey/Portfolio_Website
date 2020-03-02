@@ -93,7 +93,7 @@ a {
 
 
 /* for any anchor tags in the nav bar, when hover over: */
-nav a:hover {
+.top_nav_content a:hover {
 	border-bottom: 1px solid #000000;
 } 
 
