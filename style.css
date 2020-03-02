@@ -65,16 +65,38 @@ footer {
 	text-align: center;
 }
 
+/* nav bar */
+
 .title {
 	float: left;
+	width: 200px;
+	height: 100px;
+	overflow: auto;
+	display: inline;
+	margin: auto;
 
 }
 
 .top_nav_content {
 	float: right;
 
-	
-	
+}
+
+.logo_hannah {
+	padding: 10px 0 0 0;
+	float: left;	
+}
+
+.logo_golightly {
+	float: right;
+	position: relative;
+	right: 10%;	
+}
+
+.logo_dot {
+	float: right;
+	position: relative;
+	color: #F7D320;
 }
 
 /* main intro callout box */
