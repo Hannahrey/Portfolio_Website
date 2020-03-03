@@ -245,3 +245,44 @@ footer {
 	margin: 16px auto;
 	font-weight: 700;
 }
+
+
+/* media queries */
+
+
+@media only screen and (max-width: 770px){
+	/* mobile size*/
+
+	/* nav bar section*/
+	nav {
+		height: 90px;
+	}
+
+	.top_nav_content a {
+		float: none;
+		width: auto;
+		display: block;
+		margin: 10px 0 0 0;
+		font-size: 0.9rem;
+	  }
+	
+	.title {
+		float: left;
+		width: 150px;
+		height: 75px;
+		display: block;
+	}
+
+	.logo_hannah, .logo_golightly, .logo_dot {
+		font-size: 1.5rem;
+	}
+	
+	
+}
+
+
+@media only screen and (min-width: 770px){
+	/* laptop/desktop size*/
+
+
+   }
