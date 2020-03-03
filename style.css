@@ -201,7 +201,7 @@ header {
 	margin: 0;
 	width: 50%;
 	height: 500px;
-	background-color: #6BC4BA;
+	position: relative;
 }
 
 .box4 {
@@ -229,6 +229,27 @@ header {
   .box1:hover .overlay {
 	opacity: 0.6;
   }
+
+  .box2:hover .overlay {
+	opacity: 0.6;
+  }
+
+  .box3:hover .overlay {
+	opacity: 0.6;
+	line-height: 2rem;
+  }
+
+  .box4:hover .overlay {
+	opacity: 0.6;
+	line-height: 2rem;
+  }
+
+  .box5:hover .overlay {
+	opacity: 0.6;
+	line-height: 2rem;
+  }
+
+
 
   .overlay_contents {
 	  margin: auto;
