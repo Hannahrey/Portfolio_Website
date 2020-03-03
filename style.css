@@ -1,0 +1,319 @@
+body {
+	font-family: 'Futura', 'Helvetica', sans-serif;
+}
+
+p {
+	font-family: 'Playfair Display';
+	font-style: italic;
+	line-height: 1.8rem;
+	font-size: 1.1rem;
+	word-spacing: 0.2rem;
+}
+
+h1, h2 {
+	text-transform: lowercase;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 5rem;
+	line-height: 8rem;
+	margin: 1.2rem;
+}
+
+h2 {
+	font-size: 2rem;
+	margin: 0;
+}
+
+h3 {
+	margin: 0px 0 20px 0;
+}
+
+
+/* container to set width of page content */	
+.container_main {
+	margin: auto;
+	width: 76%;
+}
+
+
+/* nav bar */
+
+nav {
+	height: 100px;
+	position: fixed;
+	background-color: #ffffff;
+	overflow: auto;
+	width: 100%;
+	z-index: 2;
+}
+
+.top_nav_content {
+	float: right;
+}
+
+/* box containing my 'logo' */
+.title {
+	float: left;
+	width: 200px;
+	height: 100px;
+	overflow: auto;
+	display: inline;
+	margin: auto;
+}
+
+
+/* 3 parts of my 'logo' */
+.logo_hannah {
+	padding: 10px 0 0 0;
+	float: left;	
+}
+
+
+.logo_golightly {
+	float: right;
+	position: relative;
+	right: 10%;	
+}
+
+.logo_dot {
+	color: #F7D320;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500; 
+	letter-spacing: 0.05rem;
+	margin: 40px 20px;
+	color: #000000;
+}
+
+
+
+
+/* for any anchor tags in the nav bar, when hover over: */
+.top_nav_content a:hover {
+	border-bottom: 1px solid #000000;
+} 
+
+/* pseudo element to ensure the anchor tag goes to top of section (as fixed header was blocking this before): */
+#about, #portfolio, #contact::before { 
+	display: block; 
+	content: " "; 
+	margin-top: -120px; 
+	height: 120px; 
+	visibility: hidden; 
+	pointer-events: none;
+  }
+
+
+
+/* main intro callout box */
+
+/* large yellow callout background */	
+header {
+	background-color: #F7D320;
+	height: 500px;
+	padding: 250px 0 0 0px;
+	margin: 0px 0 150px 0;
+}
+
+
+.callout {
+	display: inline;
+	overflow: auto;
+	margin: auto;
+	width: 80%;
+}
+
+/* 'nice to see you' text */
+.callout_right {
+	margin: 0 0 0 12%;
+}
+
+
+/* about me section */
+
+.about_me_box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px 0 150px 0;
+}
+
+
+.about_me {
+	width: 60%;
+	
+}
+
+.img_me {
+	margin: 0;
+	width: 33.333%;
+	height: 350px;
+	background-color: #FFE2D1;
+}
+
+
+/* portfolio section */
+
+.portfolio_box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 10px 0 150px 0;
+}
+
+
+/* portfolio section- these 3 boxes sit next to each other */
+.box1, .box2, .box3  {
+	padding: 0;
+	margin: 0;
+	width: 33.333%;
+	height: 350px;
+}
+
+.box1 {
+	background-color: #FFE2D1;
+}
+
+.box2 {
+	background-color: #F7D320;
+}
+
+.box3 {
+	background-color: #DBDBDB;
+}
+
+/* portfolio section- these 2 boxes sit next to each other */
+.box4, .box5 {
+	padding: 0;
+	margin: 0;
+	width: 50%;
+	height: 500px;
+	background-color: #6BC4BA;
+}
+
+.box4 {
+	background-color: #DBDBDB;
+}
+
+.box5 {
+	background-color: #FFE2D1;
+}
+
+
+
+/* contact section */
+.contact_panel {
+	height: 480px;
+	/*background-color: #6BC4BA;*/
+	background-color: #DBDBDB;
+	padding-top: 20px;
+}
+
+
+
+/* footer section */
+footer {
+	background-color: #F7D320;
+	height: 50px;
+	overflow: auto;
+}
+
+.copyright {
+	float: left;
+	font-weight: 200;
+	font-style: italic;
+	font-family: 'Futura', 'Helvetica', sans-serif;
+	font-size: 0.8rem;
+	display: inline;
+	margin: 11px auto;
+}
+
+
+.to_top {
+	float: right;
+	display: inline-block;
+	margin: 16px auto;
+	font-weight: 700;
+}
+
+
+
+
+
+
+/* media queries */
+
+
+@media only screen and (max-width: 770px){
+	/* mobile size*/
+
+	/* nav bar section*/
+	nav {
+		height: 90px;
+	}
+
+	.top_nav_content a {
+		float: none;
+		width: auto;
+		display: block;
+		margin: 10px 0 0 0;
+		font-size: 0.9rem;
+	}
+	
+	.title {
+		float: left;
+		width: 150px;
+		height: 75px;
+		display: block;
+	}
+
+	.logo_hannah, .logo_golightly, .logo_dot {
+		font-size: 1.5rem;
+	}
+	
+	/* yellow callout section*/
+	/* 'hey there' text */
+	.callout h1 {
+		font-size: 3rem;
+		line-height: 5rem;
+	}
+
+	.callout_right {
+		margin: 5% 0 0 10%;
+		display: block;
+	}
+
+	h1 .callout_right {
+		text-align: right;
+	}
+
+	header {
+		height: 490px;
+		padding: 30% 0 20% 0;
+	}
+
+	/* about me section*/
+
+	.about_me, .img_me {
+		width: 100%;
+	}
+
+	/* portfolio section*/
+
+	.box1, .box2, .box3, .box4, .box5 {
+		width: 100%;
+		height: 300px;
+	}
+	/* footer section*/
+	.copyright {
+		font-size: 0.7rem;
+	}
+
+
+
+}
