@@ -180,6 +180,7 @@ header {
 	margin: 0;
 	width: 33.333%;
 	height: 350px;
+	position: relative;
 }
 
 .box1 {
@@ -211,7 +212,40 @@ header {
 	background-color: #FFE2D1;
 }
 
+/* portfolio- when hover over, images: */
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #Ffffff;
+  }
+  
+  .box1:hover .overlay {
+	opacity: 0.6;
+  }
 
+  .overlay_contents {
+	  margin: auto;
+	  width: 80%;
+  }
+
+  .text {
+	  text-align: center;
+	  margin: 100px 0;
+  }
+
+  .portfolio_link {
+	text-align: center;
+	padding: 0.5rem;
+	border: 1px solid #000000;
+	margin: 0;
+  }
 
 /* contact section */
 .contact_panel {
