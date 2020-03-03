@@ -30,17 +30,6 @@ h3 {
 	margin: 0px 0 20px 0;
 }
 
-nav {
-	height: 100px;
-	position: fixed;
-	background-color: #ffffff;
-	overflow: auto;
-	width: 100%;
-	z-index: 2;
-
-}
-
-
 
 /* container to set width of page content */	
 .container_main {
@@ -50,6 +39,16 @@ nav {
 }
 
 /* nav bar */
+
+nav {
+	height: 100px;
+	position: fixed;
+	background-color: #ffffff;
+	overflow: auto;
+	width: 100%;
+	z-index: 2;
+
+}
 
 /* box containing my 'logo' */
 .title {
@@ -108,9 +107,9 @@ a {
   }
 
 
+  
 
 /* main intro callout box */
-
 
 /* large yellow callout background */	
 header {
@@ -143,8 +142,6 @@ header {
 
 /* about me section */
 
-
-
 #about_me_box {
 	display: flex;
 	flex-wrap: wrap;
@@ -164,8 +161,9 @@ header {
 	height: 350px;
 	background-color: #FFE2D1;
 }
-/* portfolio section */
 
+
+/* portfolio section */
 
 .portfolio_box {
 		display: flex;
@@ -177,7 +175,6 @@ header {
 
 /* portfolio section- these 3 boxes sit next to each other */
 .box1, .box2, .box3  {
-
 	padding: 0;
 	margin: 0;
 	width: 33.333%;
@@ -195,9 +192,9 @@ header {
 .box3 {
 	background-color: #DBDBDB;
 }
+
 /* portfolio section- these 2 boxes sit next to each other */
 .box4, .box5 {
-
 	padding: 0;
 	margin: 0;
 	width: 50%;
@@ -213,8 +210,9 @@ header {
 	background-color: #FFE2D1;
 }
 
-/* contact section */
 
+
+/* contact section */
 .contact_panel {
 	height: 500px;
 	/*background-color: #6BC4BA;*/
@@ -222,8 +220,8 @@ header {
 }
 
 
-/* footer section */
 
+/* footer section */
 footer {
 	background-color: #F7D320;
 	height: 50px;
