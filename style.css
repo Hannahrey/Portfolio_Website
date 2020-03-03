@@ -17,7 +17,7 @@ h1, h2 {
 
 h1 {
 	font-size: 5rem;
-	line-height: 6rem;
+	line-height: 8rem;
 	margin: 1.2rem;
 }
 
@@ -127,16 +127,9 @@ header {
 	width: 80%;
 }
 
-/* 'hey there' text */
-.callout_left {
-	float: left;
-}
-
 /* 'nice to see you' text */
 .callout_right {
-	float: right;
-	position: relative;
-	right: 10%;
+	margin: 0 0 0 12%;
 }
 
 
@@ -277,6 +270,13 @@ footer {
 		font-size: 1.5rem;
 	}
 	
+	/* yellow callout section*/
+	/* 'hey there' text */
+.callout_left, .callout_right {
+	font-size: 4rem;
+}
+
+
 	
 }
 
