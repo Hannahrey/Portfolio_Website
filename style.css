@@ -35,7 +35,6 @@ h3 {
 .container_main {
 	margin: auto;
 	width: 76%;
-	
 }
 
 
@@ -48,12 +47,10 @@ nav {
 	overflow: auto;
 	width: 100%;
 	z-index: 2;
-
 }
 
 .top_nav_content {
 	float: right;
-
 }
 
 /* box containing my 'logo' */
@@ -64,7 +61,6 @@ nav {
 	overflow: auto;
 	display: inline;
 	margin: auto;
-
 }
 
 
@@ -113,7 +109,6 @@ a {
   }
 
 
-  
 
 /* main intro callout box */
 
@@ -141,7 +136,7 @@ header {
 
 /* about me section */
 
-#about_me_box {
+.about_me_box {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -181,7 +176,7 @@ header {
 }
 
 .box1 {
-		background-color: #FFE2D1;
+	background-color: #FFE2D1;
 }
 
 .box2 {
@@ -226,7 +221,6 @@ footer {
 	background-color: #F7D320;
 	height: 50px;
 	overflow: auto;
-
 }
 
 .copyright {
@@ -269,7 +263,7 @@ footer {
 		display: block;
 		margin: 10px 0 0 0;
 		font-size: 0.9rem;
-	  }
+	}
 	
 	.title {
 		float: left;
