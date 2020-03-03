@@ -152,14 +152,16 @@ header {
 .img_me_box {
 	margin: 0;
 	width: 33.333%;
-	background-color: #FFE2D1;
-	height: 300px;
-
+	overflow: hidden;
+	
 }
 
 .img_me {
 	width: 100%;
-
+	background-image: url("./images/sarah-dorweiler-QeVmJxZOv3k-unsplash.jpg");
+	height: 350px;
+	background-position: center; 
+	background-size: cover; 
 
 }
 
@@ -308,6 +310,10 @@ footer {
 
 	.about_me, .img_me_box {
 		width: 100%;
+	}
+
+	.img_me {
+		height: 400px;
 	}
 
 	/* portfolio section*/
