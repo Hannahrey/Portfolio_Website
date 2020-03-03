@@ -233,18 +233,16 @@ header {
   .overlay_contents {
 	  margin: auto;
 	  width: 80%;
+	  text-align: center;
   }
 
   .text {
-	  text-align: center;
 	  margin: 100px 0;
   }
 
-  .portfolio_link {
-	text-align: center;
+.portfolio_link {
 	padding: 0.5rem;
 	border: 1px solid #000000;
-	margin: 0;
   }
 
 /* contact section */
@@ -358,6 +356,12 @@ footer {
 	.copyright {
 		font-size: 0.7rem;
 	}
+
+	
+	.text {
+		margin: 70px 0;
+	}
+	
 
 
 
