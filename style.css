@@ -308,24 +308,29 @@ header {
 
 .social_media_box {
 	margin-top: 10px;
+	display: inline-block;
 }
 
 .social_media_box img {
 	max-width: 80px;
-	display: inline-block;
+	padding: 20px;
 }
 
-.contact_panel a {
+.contact_panel_a {
+	display: block;
+}
+
+.email {
 	border-bottom: 1px solid #dbdbdb;
 	padding-bottom: 0.4rem;
 	margin-top: 15px;
 }
 
 /* to add underline, when you hover over the email: */
-.contact_panel a:hover {
+.email:hover {
 	border-bottom: 1px solid #000000;
 	padding-bottom: 0.4rem;
-  }
+}
 
 
 
