@@ -444,6 +444,22 @@ footer {
   }
 
 
+/* contact section */
+  
+.social_media_box img {
+	max-width: 60px;
+	padding: 10px 20px;
+}
+
+.email {
+	font-size: 0.9rem;
+	margin: 20px 2px;
+}
+
+.contact_panel {
+	height: 280px;
+  }
+
   /* footer section*/
   .copyright {
     font-size: 0.7rem;
@@ -462,3 +478,7 @@ footer {
     height: 700px;
   }
 }
+
+
+  
+  
