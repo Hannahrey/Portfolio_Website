@@ -99,7 +99,7 @@ a {
 } 
 
 /* pseudo element to ensure the anchor tag goes to top of section (as fixed header was blocking this before): */
-#about::before, #portfolio::before, #contact::before, #mayden_logo::before, #pilot_shop::before { 
+#about::before, #portfolio::before, #contact::before, #pilot_shop::before, #mayden_logo::before { 
 	display: block; 
 	content: " "; 
 	margin-top: -120px; 
@@ -277,12 +277,12 @@ header {
 
 
 /* separate portfolio page */
-}
+
 #mayden_logo {
 	padding-top: 120px;
 }
 
-}
+
 #pilot_shop {
 	padding-top: 200px;
 }
