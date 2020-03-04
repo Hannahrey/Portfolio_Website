@@ -99,7 +99,7 @@ a {
 } 
 
 /* pseudo element to ensure the anchor tag goes to top of section (as fixed header was blocking this before): */
-#about, #portfolio, #contact::before { 
+#about, #portfolio, #contact, #mayden_logo, #pilot_shop::before { 
 	display: block; 
 	content: " "; 
 	margin-top: -120px; 
@@ -294,7 +294,7 @@ footer {
 }
 
 
-.to_top {
+.move_to {
 	float: right;
 	display: inline-block;
 	margin: 16px auto;
@@ -389,6 +389,11 @@ footer {
 }
 #mayden_logo {
 	padding-top: 120px;
+}
+
+}
+#pilot_shop {
+	padding-top: 200px;
 }
 
 
