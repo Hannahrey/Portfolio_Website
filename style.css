@@ -60,7 +60,6 @@ nav {
   width: 200px;
   height: 100px;
   overflow: auto;
-  display: inline;
   margin: auto;
 }
 
@@ -128,7 +127,6 @@ header {
   display: inline;
   overflow: auto;
   margin: auto;
-  width: 80%;
 }
 
 /* 'nice to see you' text */
@@ -296,10 +294,44 @@ header {
 
 /* contact section */
 .contact_panel {
-  height: 480px;
+  height: 320px;
   /*background-color: #6BC4BA;*/
   background-color: #dbdbdb;
-  padding-top: 20px;
+  padding-top: 40px;
+}
+
+.center_text {
+	text-align: center;
+}
+
+.social_media_box {
+
+	display: inline-block;
+}
+
+.social_media_box a {
+	margin: 0;
+}
+
+.social_media_box img {
+	max-width: 80px;
+	padding: 20px 30px;
+}
+
+.contact_panel_a {
+	display: block;
+}
+
+.email {
+	border-bottom: 1px solid #dbdbdb;
+	padding-bottom: 10px;
+	margin-top: 18px;
+}
+
+/* to add underline, when you hover over the email: */
+.email:hover {
+	border-bottom: 1px solid #000000;
+	padding-bottom: 10px;
 }
 
 
@@ -313,18 +345,16 @@ footer {
 }
 
 .copyright {
-  float: left;
   font-weight: 200;
   font-style: italic;
   font-family: 'Futura', 'Helvetica', sans-serif;
   font-size: 0.8rem;
-  display: inline;
+  float: left;
   margin: 11px auto;
 }
 
 .move_to {
   float: right;
-  display: inline-block;
   margin: 16px auto;
   font-weight: 700;
 }
@@ -410,6 +440,22 @@ footer {
   }
 
 
+/* contact section */
+  
+.social_media_box img {
+	max-width: 60px;
+	padding: 10px 20px;
+}
+
+.email {
+	font-size: 0.9rem;
+	margin: 20px 2px;
+}
+
+.contact_panel {
+	height: 280px;
+  }
+
   /* footer section*/
   .copyright {
     font-size: 0.7rem;
@@ -428,3 +474,7 @@ footer {
     height: 700px;
   }
 }
+
+
+  
+  
