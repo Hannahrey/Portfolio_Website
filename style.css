@@ -60,7 +60,6 @@ nav {
   width: 200px;
   height: 100px;
   overflow: auto;
-  display: inline;
   margin: auto;
 }
 
@@ -128,7 +127,6 @@ header {
   display: inline;
   overflow: auto;
   margin: auto;
-  width: 80%;
 }
 
 /* 'nice to see you' text */
@@ -347,18 +345,16 @@ footer {
 }
 
 .copyright {
-  float: left;
   font-weight: 200;
   font-style: italic;
   font-family: 'Futura', 'Helvetica', sans-serif;
   font-size: 0.8rem;
-  display: inline;
+  float: left;
   margin: 11px auto;
 }
 
 .move_to {
   float: right;
-  display: inline-block;
   margin: 16px auto;
   font-weight: 700;
 }
