@@ -67,13 +67,11 @@ nav {
 /* 3 parts of my 'logo' */
 .logo_hannah {
   padding: 10px 0 0 0;
-  float: left;
 }
 
 .logo_golightly {
-  float: right;
   position: relative;
-  right: 10%;
+  left: 10%;
 }
 
 .logo_dot {
@@ -378,11 +376,9 @@ footer {
     font-size: 0.9rem;
   }
 
-  .title {
-    float: left;
+  .my_name {
     width: 150px;
     height: 75px;
-    display: block;
   }
 
   .logo_hannah,
