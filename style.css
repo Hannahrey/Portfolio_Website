@@ -429,6 +429,7 @@ footer {
     width: 100%;
     height: 300px;
   }
+  
 
   /* images in portfolio page */
   .portfolio_main_image {
@@ -460,6 +461,12 @@ footer {
   .text {
     margin: 70px 0;
   }
+}
+
+@media only screen and (max-width: 500px) {
+    .overlay {
+        opacity: 0.6;
+    }
 }
 
 @media only screen and (min-width: 1366px) {
