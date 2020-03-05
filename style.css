@@ -1,5 +1,5 @@
 body {
-  font-family: 'Futura', 'Helvetica', sans-serif;
+  font-family: 'Futura', 'Open Sans', sans-serif;
 }
 
 p {
@@ -55,7 +55,7 @@ nav {
 }
 
 /* box containing my 'logo' */
-.title {
+.my_name {
   float: left;
   width: 200px;
   height: 100px;
