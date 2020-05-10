@@ -104,7 +104,6 @@ a {
 }
 
 
-
 /* main intro callout box */
 
 /* large yellow callout background */
@@ -276,8 +275,6 @@ header {
 }
 
 
-
-
 /* contact section */
 .contact_panel {
   height: 320px;
@@ -291,7 +288,6 @@ header {
 }
 
 .social_media_box {
-
 	display: inline-block;
 }
 
@@ -425,13 +421,6 @@ footer {
     height: 300px;
   }
   
-
-  /* images in portfolio page */
-  .portfolio_main_image_box {
-    height: 400px;
-  }
-
-
   /* contact section */
   
   .social_media_box img {
@@ -464,14 +453,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1366px) {
-  /* laptop/desktop size*/
 
-  /* images in portfolio page */
-  .portfolio_main_image_box {
-    height: 700px;
-  }
-}
 
 
   
