@@ -136,6 +136,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 10px 0 150px 0;
+  padding-bottom: 120px;
 }
 
 .about_me {
@@ -158,6 +159,10 @@ header {
 
 /* portfolio section */
 
+.my_work_panel {
+  background-color: #dbdbdb;
+}
+
 .portfolio_box {
   display: flex;
   flex-wrap: wrap;
@@ -175,10 +180,13 @@ header {
   width: 33.333%;
   height: 350px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box1 {
-  background-color: #ffe2d1;
+  background-color: #ffffff;
 }
 
 .box2 {
@@ -197,6 +205,9 @@ header {
   width: 50%;
   height: 500px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box4 {
@@ -205,6 +216,11 @@ header {
 
 .box5 {
   background-color: #ffe2d1;
+}
+
+.box_image {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* portfolio- when hover over, images: */
@@ -218,11 +234,11 @@ header {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #ffffff;
 }
 
 .box1:hover .overlay {
-  opacity: 0.6;
+  opacity: 0.7;
+  background-color: #ffe2d1;
 }
 
 .box2:hover .overlay {
@@ -290,7 +306,7 @@ header {
 .contact_panel {
   height: 320px;
   /*background-color: #6BC4BA;*/
-  background-color: #dbdbdb;
+  background-color: #ffe2d1;
   padding-top: 40px;
 }
 
