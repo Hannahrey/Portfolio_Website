@@ -190,7 +190,7 @@ header {
 }
 
 .box3 {
-  background-color: #dbdbdb;
+  background-color: #ffffff;
 }
 
 /* portfolio section- these 2 boxes sit next to each other */
@@ -243,8 +243,8 @@ header {
 }
 
 .box3:hover .overlay {
-  opacity: 0.6;
-  line-height: 2rem;
+  opacity: 0.7;
+  background-color: #dbdbdb;
 }
 
 .box4:hover .overlay {
