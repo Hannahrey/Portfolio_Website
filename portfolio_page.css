@@ -1,7 +1,7 @@
 /* separate portfolio page */
 
 #mayden_logo, #finance_calc, #pilot_shop, #estate_agents  {
-  padding-top: 125px;
+  padding-top: 150px;
 }
 
 
@@ -28,9 +28,10 @@
 }
 
 .project_section p {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: light;
-    padding: 0 40px;
+    line-height: 1.4rem;
+    padding: 0 50px;
 }
 
 .project_link_panel {
@@ -44,23 +45,35 @@
 }
 
 .project_link_panel a {
-    margin: 12px 8px 20px 8px;
+    margin: 12px 8px 50px 8px;
     align-items: center;
 }
 
 /* media queries */
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 500px) {
     /* mobile size*/
 
 #mayden_logo, #finance_calc, #estate_agents {
-    padding-top: 100px;
+    padding-top: 130px;
   }
 
   /* images in portfolio page */
   .portfolio_main_image_box {
     height: 400px;
   }  
+
+  .project_section p {
+    padding: 0 10px;
+  }
+  
+  .project_link_panel a {
+    margin: 12px 8px 20px 8px;
+    align-items: center;
+    display: inline-block;
+  }
 }
+
+
   
 @media only screen and (min-width: 1366px) {
     /* laptop/desktop size*/
