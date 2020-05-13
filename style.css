@@ -211,7 +211,7 @@ header {
 }
 
 .box5 {
-  background-color: #ffe2d1;
+  background-color: #F7F7FF;
 }
 
 .box_image {
@@ -254,8 +254,9 @@ header {
 }
 
 .box5:hover .overlay {
-  opacity: 0.6;
+  opacity: 0.7;
   line-height: 2rem;
+  background-color: #f7d320;
 }
 
 
