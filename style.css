@@ -108,8 +108,8 @@ a {
 /* large yellow callout background */
 header {
   background-color: #f7d320;
-  height: 500px;
-  padding: 250px 0 0 0px;
+  height: auto;
+  padding: 250px 0 160px 0px;
   margin: 0px 0 120px 0;
 }
 
@@ -119,9 +119,44 @@ header {
   margin: auto;
 }
 
+/* 'hey there' text */
+.callout_left {
+  animation-name: movingTextHey;
+  animation-duration: 2s;
+  margin: 0 0 0 12%;
+}
+ 
+@keyframes movingTextHey{
+  from {
+    margin: 0 0 0 0;
+  }
+  to {
+    margin: 0 0 0 12%;
+  }
+}
+
 /* 'nice to see you' text */
 .callout_right {
-  margin: 0 0 0 12%;
+  margin: 0 0 0 24%;
+  animation-name: movingTextNice;
+  animation-duration: 2s;
+}
+
+@keyframes movingTextNice {
+  from {
+    margin: 0 0 0 0;
+  }
+  to {
+    margin: 0 0 0 24%;
+  }
+}
+@-webkit-keyframes movingTextNice {
+  from {
+    margin: 0 0 0 0;
+  }
+  to {
+    margin: 0 0 0 24%;
+  }
 }
 
 
@@ -382,10 +417,38 @@ footer {
     font-size: 3rem;
     line-height: 5rem;
   }
-
+  
+  /* 'hey there' text */
+  .callout_left {
+    animation-name: movingTextHey;
+    animation-duration: 2s;
+    margin: 10% 0 0 12%;
+  }
+   
+  @keyframes movingTextHey{
+    from {
+      margin: 10% 0 0 0;
+    }
+    to {
+      margin: 10% 0 0 12%;
+    }
+  }
+  
+  /* 'nice to see you' text */
   .callout_right {
-    margin: 5% 0 0 10%;
+    margin: 5% 10% 0 10%;
     display: block;
+    animation-name: movingTextNice;
+    animation-duration: 2s;
+  }
+  
+  @keyframes movingTextNice {
+    from {
+      margin: 0 0 0 0;
+    }
+    to {
+      margin: 5% 10% 0 10%;
+    }
   }
 
   h2 .callout_right {
@@ -393,7 +456,6 @@ footer {
   }
 
   header {
-    height: 490px;
     padding: 30% 0 20% 0;
     margin: 0px 0 60px 0;
   }
