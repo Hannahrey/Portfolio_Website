@@ -84,6 +84,11 @@ a {
   color: #000000;
 }
 
+.top_nav_content a {
+  margin: 40px 0 40px 40px;
+}
+
+
 /* for any anchor tags in the nav bar, when hover over: */
 .top_nav_content a:hover {
   border-bottom: 1px solid #000000;
@@ -249,32 +254,47 @@ header {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.box1:hover .overlay {
+
+.box:hover .overlay{
   opacity: 0.7;
+}
+
+.box .overlay .overlay_contents .text, .box .overlay .overlay_contents > a{
+  transform: translateY(-30px);
+  transition: transform .5s ease-out;
+}
+.box .overlay .overlay_contents > a{
+  transition-duration: .3s;
+}
+
+.box:hover .overlay .overlay_contents .text, .box:hover .overlay .overlay_contents > a{
+  transform: translateY(0);
+}
+
+
+.box1 .overlay {
   background-color: #ffe2d1;
 }
 
-.box2:hover .overlay {
-  opacity: 0.7;
+.box2 .overlay {
   background-color:  #f7d320;
 }
 
-.box3:hover .overlay {
-  opacity: 0.7;
+.box3 .overlay {
   background-color: #dbdbdb;
 }
 
-.box4:hover .overlay {
-  opacity: 0.7;
-  line-height: 2rem;
+.box4 .overlay {
   background-color: #dbdbdb;
 }
 
-.box5:hover .overlay {
-  opacity: 0.7;
-  line-height: 2rem;
+.box5 .overlay {
   background-color: #f7d320;
 }
 
@@ -287,7 +307,7 @@ header {
 }
 
 .text {
-  margin: 100px 0;
+  margin-bottom: 30px;
 }
 
 .portfolio_link {
