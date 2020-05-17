@@ -191,7 +191,7 @@ header {
 }
 
 
-/* portfolio section- these 3 boxes sit next to each other */
+/* portfolio section- these 3 small boxes sit next to each other */
 .box1,
 .box2,
 .box3 {
@@ -217,7 +217,7 @@ header {
   background-color: #ffffff;
 }
 
-/* portfolio section- these 2 boxes sit next to each other */
+/* portfolio section- these 2 large boxes sit next to each other */
 .box4,
 .box5 {
   padding: 0;
@@ -307,7 +307,7 @@ header {
 }
 
 .text {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .portfolio_link {
