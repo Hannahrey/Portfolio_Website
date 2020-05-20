@@ -1,0 +1,66 @@
+body {
+  font-family: "Futura", "Jost", sans-serif;
+}
+body p {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  line-height: 1.8rem;
+  font-size: 1rem;
+  word-spacing: 0.2rem;
+}
+body h1, body h2 {
+  text-transform: lowercase;
+  font-weight: 700;
+}
+body h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+body h2 {
+  font-size: 5rem;
+  line-height: 8rem;
+  margin: 1.4rem;
+}
+body h3 {
+  margin: 0px 0 20px 0;
+}
+body a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  margin: 40px 20px;
+  color: #000000;
+}
+
+/* nav bar */
+nav {
+  height: 100px;
+  position: fixed;
+  background-color: #ffffff;
+  overflow: auto;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 4px solid #ffe2d1;
+}
+nav .nav_links {
+  float: right;
+}
+nav .nav_links a {
+  margin: 40px 0 40px 40px;
+}
+nav .nav_logo {
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  background-image: url("/images/hg_logo.svg");
+}
+
+/* container to set width of page content */
+.container_main {
+  margin: auto;
+  width: 76%;
+}
+
+/*# sourceMappingURL=styles.css.map */

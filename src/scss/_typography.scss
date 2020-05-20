@@ -1,0 +1,43 @@
+
+body {
+    font-family: $main-san-serif-font;
+
+    p {
+        font-family: $paragraph-serif-font;
+        font-style: italic;
+        line-height: 1.8rem;
+        font-size: $font-size-regular;
+        word-spacing: 0.2rem;
+      }
+
+    h1, h2 {
+        text-transform: lowercase;
+        font-weight: $font-weight-bold;
+    }
+
+    h1 {
+        font-size: $font-size-large;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: $font-size-xlarge;
+        line-height: 8rem;
+        margin: 1.4rem;
+    }
+
+    h3 {
+        margin: 0px 0 20px 0;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: $font-weight-regular;
+        letter-spacing: 0.05rem;
+        margin: 40px 20px;
+        color: $body-text-color;
+      }   
+    
+}
+

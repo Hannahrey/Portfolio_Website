@@ -1,0 +1,25 @@
+/* nav bar */
+nav {
+    height: 100px;
+    position: fixed;
+    background-color: $background-color;
+    overflow: auto;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 4px solid $accent-peach-color;
+
+    .nav_links {
+        float: right;
+        a {
+            margin: 40px 0 40px 40px;
+        }        
+    }
+
+    .nav_logo {
+        float: left;
+        width: 200px;
+        height: 100px;
+        margin: auto;
+        background-image: url("/images/hg_logo.svg")
+    }
+  }
