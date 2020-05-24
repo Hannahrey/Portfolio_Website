@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: 'Futura', 'Jost', sans-serif;
 }
 
@@ -32,13 +32,13 @@ h3 {
 }
 
 /* container to set width of page content */
-.container_main {
+/* .container_main {
   margin: auto;
   width: 76%;
 }
 
 /* nav bar */
-nav {
+/* nav {
   height: 100px;
   position: fixed;
   background-color: #ffffff;
@@ -46,19 +46,19 @@ nav {
   width: 100%;
   z-index: 2;
   border-bottom: 4px solid #ffe2d1;
-}
+} */
 
-.top_nav_content {
+/* .top_nav_content {
   float: right;
-}
+} */
 
 /* box containing my 'logo' */
-.my_name {
+/* .my_name {
   float: left;
   width: 200px;
   height: 100px;
   margin: auto;
-}
+} */
 
 
 /* 3 parts of my 'logo' */
@@ -527,4 +527,4 @@ header {
     margin: 0 16% 0 10%;
   }
   
-}
+} */

@@ -2,17 +2,22 @@
 nav {
     height: 100px;
     position: fixed;
-    background-color: $background-color;
+    top: 0;
     overflow: auto;
     width: 100%;
     z-index: 2;
+    background-color: $background-color;
     border-bottom: 4px solid $accent-peach-color;
 
     .nav_links {
         float: right;
         a {
             margin: 40px 0 40px 40px;
-        }        
+            &:hover {
+                border-bottom: 1px solid $body-text-color;
+            }    
+        }
+
     }
 
     .nav_logo {
@@ -20,6 +25,10 @@ nav {
         width: 200px;
         height: 100px;
         margin: auto;
-        background-image: url("/images/hg_logo.svg")
+        background-image: url("../../images/hg_logo.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+        display: block;
     }
   }

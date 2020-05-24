@@ -37,10 +37,11 @@ body a {
 nav {
   height: 100px;
   position: fixed;
-  background-color: #ffffff;
+  top: 0;
   overflow: auto;
   width: 100%;
   z-index: 2;
+  background-color: #ffffff;
   border-bottom: 4px solid #ffe2d1;
 }
 nav .nav_links {
@@ -49,18 +50,72 @@ nav .nav_links {
 nav .nav_links a {
   margin: 40px 0 40px 40px;
 }
+nav .nav_links a:hover {
+  border-bottom: 1px solid #000000;
+}
 nav .nav_logo {
   float: left;
   width: 200px;
   height: 100px;
   margin: auto;
-  background-image: url("/images/hg_logo.svg");
+  background-image: url("../../images/hg_logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: block;
+}
+
+/* main intro callout box */
+/* large yellow callout background */
+header {
+  background-color: #f7d320;
+  height: auto;
+  padding: 180px 0 160px 0px;
+  margin: 0px 0 120px 0;
+}
+header .callout {
+  display: inline;
+  overflow: auto;
+  margin: auto;
+  /* 'hey there' text */
+  /* 'nice to see you' text */
+}
+@keyframes movingText {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+header .callout .callout_left {
+  animation-name: movingText;
+  animation-duration: 3s;
+  text-align: left;
+}
+header .callout .callout_right {
+  display: block;
+  text-align: right;
+  animation-name: movingText;
+  animation-duration: 3s;
 }
 
 /* container to set width of page content */
 .container_main {
   margin: auto;
   width: 76%;
+}
+
+/* pseudo element to ensure the anchor tag goes to top of section (as fixed header was blocking this before): */
+#about::before,
+#portfolio::before,
+#contact::before {
+  display: block;
+  content: " ";
+  margin-top: -120px;
+  height: 120px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

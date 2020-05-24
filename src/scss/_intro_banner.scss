@@ -1,0 +1,45 @@
+/* main intro callout box */
+
+/* large yellow callout background */
+header {
+    background-color: $main-yellow-color;
+    height: auto;
+    padding: 180px 0 160px 0px;
+    margin: 0px 0 120px 0;
+    
+    .callout {
+        display: inline;
+        overflow: auto;
+        margin: auto;
+        @keyframes movingText {
+            from {
+              transform: translateX(-50%);
+            }
+            to {
+              transform: translateX(0%);
+            }
+        }
+        /* 'hey there' text */
+        .callout_left {
+            animation-name: movingText;
+            animation-duration: 3s;
+            text-align: left;
+        }
+          /* 'nice to see you' text */
+        .callout_right {
+            display: block;
+            text-align: right;
+            animation-name: movingText;
+            animation-duration: 3s;
+        }
+    }
+}
+  
+
+  
+  
+  
+  
+   
+
+  
