@@ -1,0 +1,36 @@
+
+/* contact section */
+.contact_panel {
+    height: 320px;
+    background-color: $accent-grey-color;
+    padding-top: 40px;
+    
+    .center_text {
+        text-align: center;
+        .contact_panel_a {
+            display: block;
+            .email {
+                border-bottom: 1px solid $accent-grey-color;
+                padding-bottom: 10px;
+                margin-top: 18px;
+                /* to add underline, when you hover over the email: */
+                &:hover {
+                    border-bottom: 1px solid $body-text-color;
+                }    
+            }
+        }
+        .social_media_box {
+            display: inline-block;
+            a {
+                margin: 0;
+            }
+            img {
+                max-width: 80px;
+                padding: 20px 30px
+            }
+        }
+    }
+}
+  
+  
+  

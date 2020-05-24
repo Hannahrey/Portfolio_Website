@@ -1,0 +1,123 @@
+/* portfolio section */
+
+.my_work_panel {
+    background-color: $accent-grey-color;
+    .portfolio_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px 0 150px 0;
+
+        .box{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .box_image {
+                max-height: 100%;
+                max-width: 100%;
+            }
+            
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+              
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                /* content within the overlays on boxes */
+                .overlay_contents {
+                    margin: auto;
+                    width: 80%;
+                    text-align: center;
+
+                    .text, .portfolio_link{
+                        transform: translateY(-30px);
+                        transition: transform .5s ease-out;
+                    }
+                    .text {
+                        margin-bottom: 40px;
+                        font-size: 1.5rem;
+                    }
+                    .portfolio_link {
+                        padding: 0.5rem;
+                        border: 1px solid $body-text-color;
+                        transition-duration: .3s;
+                    }
+                }   
+            }
+
+            &.large_box{
+                width: 50%;
+                height: 500px;
+            }
+            &.small_box{
+                width: 33.333%;
+                height: 350px;
+            }
+
+            &.box_no_background {
+                background-color: $background-color;
+            }
+            &.box_post_railings {
+                background-color: #4D3E10;
+            } 
+            &.box_estate_agents {
+                background-color: #344354;
+            }
+            &.box_card_game {
+                background-color: #F7F7FF;
+            } 
+            &.box_finance_calc {
+                background-color: #0C5865;
+            }
+
+            /* portfolio- when hover over, images: */
+            &:hover{
+                .overlay{
+                    opacity: 0.7;
+                    .overlay_contents {
+                        .text, .portfolio_link{
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+            &:nth-child(3n+1) .overlay {
+                background-color: $accent-peach-color;
+            }
+            &:nth-child(3n+2) .overlay {
+                background-color: $main-yellow-color;
+            }
+            &:nth-child(3n+3) .overlay {
+                background-color: $accent-grey-color;
+            }
+        }          
+    }
+}
+  
+  
+
+ 
+
+
+  
+
+  
+
+  
+  
+  
+
+  

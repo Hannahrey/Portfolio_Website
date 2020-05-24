@@ -100,6 +100,158 @@ header .callout .callout_right {
   animation-duration: 3s;
 }
 
+/* about me section */
+.about_me_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 150px 0;
+  padding-bottom: 120px;
+}
+
+.about_me {
+  width: 60%;
+}
+
+.img_me_box {
+  margin: 0;
+  width: 33.333%;
+}
+.img_me_box .img_me {
+  width: 100%;
+  background-image: url("../../images/sarah-dorweiler-QeVmJxZOv3k-unsplash.jpg");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* portfolio section */
+.my_work_panel {
+  background-color: #dbdbdb;
+}
+.my_work_panel .portfolio_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 150px 0;
+}
+.my_work_panel .portfolio_box .box {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* portfolio- when hover over, images: */
+}
+.my_work_panel .portfolio_box .box .box_image {
+  max-height: 100%;
+  max-width: 100%;
+}
+.my_work_panel .portfolio_box .box .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* content within the overlays on boxes */
+}
+.my_work_panel .portfolio_box .box .overlay .overlay_contents {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+.my_work_panel .portfolio_box .box .overlay .overlay_contents .text, .my_work_panel .portfolio_box .box .overlay .overlay_contents .portfolio_link {
+  transform: translateY(-30px);
+  transition: transform 0.5s ease-out;
+}
+.my_work_panel .portfolio_box .box .overlay .overlay_contents .text {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+.my_work_panel .portfolio_box .box .overlay .overlay_contents .portfolio_link {
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  transition-duration: 0.3s;
+}
+.my_work_panel .portfolio_box .box.large_box {
+  width: 50%;
+  height: 500px;
+}
+.my_work_panel .portfolio_box .box.small_box {
+  width: 33.333%;
+  height: 350px;
+}
+.my_work_panel .portfolio_box .box.box_no_background {
+  background-color: #ffffff;
+}
+.my_work_panel .portfolio_box .box.box_post_railings {
+  background-color: #4D3E10;
+}
+.my_work_panel .portfolio_box .box.box_estate_agents {
+  background-color: #344354;
+}
+.my_work_panel .portfolio_box .box.box_card_game {
+  background-color: #F7F7FF;
+}
+.my_work_panel .portfolio_box .box.box_finance_calc {
+  background-color: #0C5865;
+}
+.my_work_panel .portfolio_box .box:hover .overlay {
+  opacity: 0.7;
+}
+.my_work_panel .portfolio_box .box:hover .overlay .overlay_contents .text, .my_work_panel .portfolio_box .box:hover .overlay .overlay_contents .portfolio_link {
+  transform: translateY(0);
+}
+.my_work_panel .portfolio_box .box:nth-child(3n+1) .overlay {
+  background-color: #ffe2d1;
+}
+.my_work_panel .portfolio_box .box:nth-child(3n+2) .overlay {
+  background-color: #f7d320;
+}
+.my_work_panel .portfolio_box .box:nth-child(3n+3) .overlay {
+  background-color: #dbdbdb;
+}
+
+/* contact section */
+.contact_panel {
+  height: 320px;
+  background-color: #dbdbdb;
+  padding-top: 40px;
+}
+.contact_panel .center_text {
+  text-align: center;
+}
+.contact_panel .center_text .contact_panel_a {
+  display: block;
+}
+.contact_panel .center_text .contact_panel_a .email {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 10px;
+  margin-top: 18px;
+  /* to add underline, when you hover over the email: */
+}
+.contact_panel .center_text .contact_panel_a .email:hover {
+  border-bottom: 1px solid #000000;
+}
+.contact_panel .center_text .social_media_box {
+  display: inline-block;
+}
+.contact_panel .center_text .social_media_box a {
+  margin: 0;
+}
+.contact_panel .center_text .social_media_box img {
+  max-width: 80px;
+  padding: 20px 30px;
+}
+
 /* container to set width of page content */
 .container_main {
   margin: auto;
