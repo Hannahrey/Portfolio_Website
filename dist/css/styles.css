@@ -33,6 +33,72 @@ body a {
   color: #000000;
 }
 
+/* separate portfolio page */
+.project_section {
+  margin-bottom: 60px;
+  /* mobile size*/
+}
+.project_section p {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding: 0 50px;
+}
+.project_section .project_link_panel {
+  background-color: #dbdbdb;
+  width: 100%;
+  min-height: 280px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.project_section .project_link_panel .portfolio_link {
+  margin: 12px 8px 50px 8px;
+  align-items: center;
+}
+.project_section .project_link_panel #mayden_logo,
+.project_section .project_link_panel #finance_calc,
+.project_section .project_link_panel #pilot_shop,
+.project_section .project_link_panel #estate_agents,
+.project_section .project_link_panel #collectors_app {
+  padding-top: 150px;
+}
+.project_section .portfolio_main_image_box {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.project_section .portfolio_main_image_box img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-height: 96%;
+  max-width: 100%;
+}
+@media only screen and (max-width: 770px) {
+  .project_section p {
+    padding: 0 10px;
+  }
+  .project_section .project_link_panel .portfolio_link {
+    margin: 12px 8px 20px 8px;
+    align-items: center;
+    display: inline-block;
+  }
+  .project_section .project_link_panel #mayden_logo,
+.project_section .project_link_panel #finance_calc,
+.project_section .project_link_panel #pilot_shop,
+.project_section .project_link_panel #estate_agents,
+.project_section .project_link_panel #collectors_app {
+    padding-top: 130px;
+  }
+  .project_section .portfolio_main_image_box {
+    height: 400px;
+  }
+}
+
 /* nav bar */
 nav {
   height: 100px;
@@ -234,8 +300,6 @@ header .callout .callout_right {
   line-height: 1.5rem;
 }
 .my_work_panel .portfolio_box .box .overlay .overlay_contents .portfolio_link {
-  padding: 0.5rem;
-  border: 1px solid #000000;
   transition-duration: 0.3s;
 }
 .my_work_panel .portfolio_box .box.large_box {
@@ -347,14 +411,6 @@ footer .copyright {
   float: left;
   margin: 11px auto;
 }
-footer .move_to {
-  float: right;
-  margin: 16px auto;
-  font-weight: 700;
-}
-footer .move_to:hover {
-  border-bottom: 1px solid #000000;
-}
 @media only screen and (max-width: 770px) {
   footer .copyright {
     font-size: 0.7rem;
@@ -378,6 +434,21 @@ footer .move_to:hover {
 
 .center_text {
   text-align: center;
+}
+
+/* links to move you to a different part of the site */
+.move_to {
+  float: right;
+  margin: 16px auto;
+  font-weight: 700;
+}
+.move_to:hover {
+  border-bottom: 1px solid #000000;
+}
+
+.portfolio_link {
+  padding: 0.5rem;
+  border: 1px solid #000000;
 }
 
 /* pseudo element to ensure the anchor tag goes to top of section (as fixed header was blocking this before): */

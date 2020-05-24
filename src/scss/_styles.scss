@@ -1,12 +1,14 @@
 @import '_media_queries';
 @import '_variables';
 @import '_typography';
+@import '_portfolio_page';
 @import '_nav';
 @import '_intro_banner';
 @import '_about_me';
 @import '_portfolio_section';
 @import '_contact';
 @import '_footer';
+
 
 
 /* container to set width of page content */
@@ -21,6 +23,22 @@
 
 .center_text {
   text-align: center;
+}
+
+/* links to move you to a different part of the site */
+.move_to {
+  float: right;
+  margin: 16px auto;
+  font-weight: $font-weight-bold;
+
+  &:hover {
+    border-bottom: $border-bottom;
+  }
+}
+
+.portfolio_link {
+  padding: 0.5rem;
+  border: 1px solid $body-text-color;
 }
 
 

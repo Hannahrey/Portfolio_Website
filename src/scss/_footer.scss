@@ -13,15 +13,6 @@ footer {
     margin: 11px auto;
   }
 
-  .move_to {
-    float: right;
-    margin: 16px auto;
-    font-weight: $font-weight-bold;
-
-    &:hover {
-      border-bottom: $border-bottom;
-    }
-  }
   @include responsiveMobile() {
     .copyright {
       font-size: 0.7rem;
