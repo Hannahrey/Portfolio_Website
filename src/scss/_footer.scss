@@ -1,24 +1,35 @@
 /* footer section */
 footer {
-    background-color: $main-yellow-color;
-    height: 50px;
-    overflow: auto;
-    .copyright {
-        font-weight: 200;
-        font-style: italic;
-        font-family: $main-san-serif-font;
-        font-size: 0.8rem;
-        float: left;
-        margin: 11px auto;
-      }
-    .move_to {
-        float: right;
-        margin: 16px auto;
-        font-weight: $font-weight-bold;
-        &:hover {
-            border-bottom: $border-bottom;
-        }    
+  background-color: $main-yellow-color;
+  height: 50px;
+  overflow: auto;
+
+  .copyright {
+    font-weight: 200;
+    font-style: italic;
+    font-family: $main-san-serif-font;
+    font-size: 0.8rem;
+    float: left;
+    margin: 11px auto;
+  }
+
+  .move_to {
+    float: right;
+    margin: 16px auto;
+    font-weight: $font-weight-bold;
+
+    &:hover {
+      border-bottom: $border-bottom;
     }
+  }
+  @include responsiveMobile() {
+    .copyright {
+      font-size: 0.7rem;
+    }
+    .text {
+      margin: 70px 0;
+    }
+  }
 }
   
 

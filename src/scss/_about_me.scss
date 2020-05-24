@@ -1,25 +1,41 @@
 /* about me section */
 
 .about_me_box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px 0 150px 0;
-    padding-bottom: 120px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 150px 0;
+  padding-bottom: 120px;
+
   .about_me {
     width: 60%;
-    }
+  }
+
   .img_me_box {
     margin: 0;
     width: 33.333%;
+
     .img_me {
-        width: 100%;
-        background-image: url("../../images/sarah-dorweiler-QeVmJxZOv3k-unsplash.jpg");
-        height: 350px;
-        background-position: center;
-        background-size: cover;
+      width: 100%;
+      background-image: url("../../images/sarah-dorweiler-QeVmJxZOv3k-unsplash.jpg");
+      height: 350px;
+      background-position: center;
+      background-size: cover;
     }
+  }
+  
+  @include responsiveMobile() {
+    margin: 10px 10px 150px 10px;
+
+    .about_me,
+    .img_me_box {
+      width: 100%;
+    }
+
+    .img_me_box .img_me {
+      height: 400px;
+    }
+  }
 }
 
 

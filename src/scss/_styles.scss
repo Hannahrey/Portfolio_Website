@@ -1,24 +1,33 @@
-@import'_variables';
-@import'_typography';
-@import'_nav';
-@import'_intro_banner';
-@import'_about_me';
-@import'_portfolio_section';
-@import'_contact';
-@import'_footer';
+@import '_media_queries';
+@import '_variables';
+@import '_typography';
+@import '_nav';
+@import '_intro_banner';
+@import '_about_me';
+@import '_portfolio_section';
+@import '_contact';
+@import '_footer';
 
 
 /* container to set width of page content */
 .container_main {
-    margin: auto;
-    width: 76%;
+  margin: auto;
+  width: 76%;
+
+  @include responsiveMobile() {
+    width: 90%;
   }
+}
+
+.center_text {
+  text-align: center;
+}
+
 
 /* pseudo element to ensure the anchor tag goes to top of section (as fixed header was blocking this before): */
 #about::before,
 #portfolio::before,
-#contact::before
-{
+#contact::before {
   display: block;
   content: " ";
   margin-top: -120px;
@@ -27,4 +36,3 @@
   pointer-events: none;
 }
 
-@import'_media_queries';

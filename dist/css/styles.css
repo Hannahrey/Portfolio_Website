@@ -43,6 +43,7 @@ nav {
   z-index: 2;
   background-color: #ffffff;
   border-bottom: 4px solid #ffe2d1;
+  /* mobile size*/
 }
 nav .nav_links {
   float: right;
@@ -64,6 +65,22 @@ nav .nav_logo {
   background-position: left center;
   display: block;
 }
+@media only screen and (max-width: 770px) {
+  nav {
+    height: 90px;
+  }
+  nav .nav_logo {
+    width: 150px;
+    height: 80px;
+    background-position: left bottom;
+  }
+  nav .nav_links a {
+    margin: 10px 0 0 0;
+    font-size: 0.9rem;
+    display: block;
+    width: auto;
+  }
+}
 
 /* main intro callout box */
 /* large yellow callout background */
@@ -72,6 +89,7 @@ header {
   height: auto;
   padding: 180px 0 160px 0px;
   margin: 0px 0 120px 0;
+  /* mobile size*/
 }
 header .callout {
   display: inline;
@@ -79,6 +97,7 @@ header .callout {
   margin: auto;
   /* 'hey there' text */
   /* 'nice to see you' text */
+  /* large desktop size*/
 }
 @keyframes movingText {
   from {
@@ -99,6 +118,30 @@ header .callout .callout_right {
   animation-name: movingText;
   animation-duration: 3s;
 }
+@media only screen and (min-width: 1600px) {
+  header .callout .callout_left {
+    margin-left: 16%;
+  }
+  header .callout .callout_right {
+    margin: 0 16% 0 10%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  header {
+    padding: 100px 0 80px 0;
+    margin: 0px 0 60px 0;
+    /* 'hey there' text */
+  }
+  header .callout_left {
+    font-size: 3rem;
+    line-height: 5rem;
+    margin: 10% 0 0 12%;
+    /* 'nice to see you' text */
+  }
+  header .callout_left .callout_right {
+    margin: 5% 10% 0 10%;
+  }
+}
 
 /* about me section */
 .about_me_box {
@@ -107,22 +150,33 @@ header .callout .callout_right {
   justify-content: space-between;
   margin: 10px 0 150px 0;
   padding-bottom: 120px;
+  /* mobile size*/
 }
-
-.about_me {
+.about_me_box .about_me {
   width: 60%;
 }
-
-.img_me_box {
+.about_me_box .img_me_box {
   margin: 0;
   width: 33.333%;
 }
-.img_me_box .img_me {
+.about_me_box .img_me_box .img_me {
   width: 100%;
   background-image: url("../../images/sarah-dorweiler-QeVmJxZOv3k-unsplash.jpg");
   height: 350px;
   background-position: center;
   background-size: cover;
+}
+@media only screen and (max-width: 770px) {
+  .about_me_box {
+    margin: 10px 10px 150px 10px;
+  }
+  .about_me_box .about_me,
+.about_me_box .img_me_box {
+    width: 100%;
+  }
+  .about_me_box .img_me_box .img_me {
+    height: 400px;
+  }
 }
 
 /* portfolio section */
@@ -143,6 +197,7 @@ header .callout .callout_right {
   justify-content: center;
   align-items: center;
   /* portfolio- when hover over, images: */
+  /* mobile size*/
 }
 .my_work_panel .portfolio_box .box .box_image {
   max-height: 100%;
@@ -190,6 +245,12 @@ header .callout .callout_right {
 .my_work_panel .portfolio_box .box.small_box {
   width: 33.333%;
   height: 350px;
+  /* mobile size*/
+}
+@media only screen and (max-width: 770px) {
+  .my_work_panel .portfolio_box .box.small_box {
+    width: 100%;
+  }
 }
 .my_work_panel .portfolio_box .box.box_no_background {
   background-color: #ffffff;
@@ -221,37 +282,54 @@ header .callout .callout_right {
 .my_work_panel .portfolio_box .box:nth-child(3n+3) .overlay {
   background-color: #dbdbdb;
 }
+@media only screen and (max-width: 770px) {
+  .my_work_panel .portfolio_box .box.large_box, .my_work_panel .portfolio_box .box.small_box {
+    width: 100%;
+    height: 300px;
+  }
+}
 
 /* contact section */
 .contact_panel {
   height: 320px;
   background-color: #dbdbdb;
   padding-top: 40px;
+  /* mobile size*/
 }
-.contact_panel .center_text {
-  text-align: center;
-}
-.contact_panel .center_text .contact_panel_a {
+.contact_panel .contact_panel_a {
   display: block;
 }
-.contact_panel .center_text .contact_panel_a .email {
+.contact_panel .contact_panel_a .email {
   border-bottom: 1px solid #dbdbdb;
   padding-bottom: 10px;
   margin-top: 18px;
   /* to add underline, when you hover over the email: */
 }
-.contact_panel .center_text .contact_panel_a .email:hover {
+.contact_panel .contact_panel_a .email:hover {
   border-bottom: 1px solid #000000;
 }
-.contact_panel .center_text .social_media_box {
+.contact_panel .social_media_box {
   display: inline-block;
 }
-.contact_panel .center_text .social_media_box a {
+.contact_panel .social_media_box a {
   margin: 0;
 }
-.contact_panel .center_text .social_media_box img {
+.contact_panel .social_media_box img {
   max-width: 80px;
   padding: 20px 30px;
+}
+@media only screen and (max-width: 770px) {
+  .contact_panel {
+    height: 280px;
+  }
+  .contact_panel .email {
+    font-size: 0.9rem;
+    margin: 20px 2px;
+  }
+  .contact_panel .social_media_box img {
+    max-width: 60px;
+    padding: 10px 20px;
+  }
 }
 
 /* footer section */
@@ -259,6 +337,7 @@ footer {
   background-color: #f7d320;
   height: 50px;
   overflow: auto;
+  /* mobile size*/
 }
 footer .copyright {
   font-weight: 200;
@@ -276,11 +355,29 @@ footer .move_to {
 footer .move_to:hover {
   border-bottom: 1px solid #000000;
 }
+@media only screen and (max-width: 770px) {
+  footer .copyright {
+    font-size: 0.7rem;
+  }
+  footer .text {
+    margin: 70px 0;
+  }
+}
 
 /* container to set width of page content */
 .container_main {
   margin: auto;
   width: 76%;
+  /* mobile size*/
+}
+@media only screen and (max-width: 770px) {
+  .container_main {
+    width: 90%;
+  }
+}
+
+.center_text {
+  text-align: center;
 }
 
 /* pseudo element to ensure the anchor tag goes to top of section (as fixed header was blocking this before): */
@@ -293,129 +390,6 @@ footer .move_to:hover {
   height: 120px;
   visibility: hidden;
   pointer-events: none;
-}
-
-/* media queries */
-@media only screen and (max-width: 770px) {
-  /* mobile size*/
-  /* container to set width of page content */
-  .container_main {
-    margin: auto;
-    width: 90%;
-  }
-
-  /* nav bar section*/
-  nav {
-    height: 90px;
-  }
-  nav .nav_logo {
-    width: 150px;
-    height: 75px;
-    background-position: left bottom;
-  }
-  nav .nav_links a {
-    margin: 10px 0 0 0;
-    font-size: 0.9rem;
-    display: block;
-    width: auto;
-  }
-
-  /* yellow callout section*/
-  /* 'hey there' text */
-  header {
-    padding: 100px 0 80px 0;
-    margin: 0px 0 60px 0;
-  }
-  header .callout, header h2 {
-    font-size: 3rem;
-    line-height: 5rem;
-    /* 'hey there' text */
-    /* 'nice to see you' text */
-  }
-  header .callout .callout_left, header h2 .callout_left {
-    margin: 10% 0 0 12%;
-  }
-  header .callout .callout_right, header h2 .callout_right {
-    margin: 5% 10% 0 10%;
-  }
-
-  /* about me section*/
-  .about_me_box {
-    margin: 10px 10px 150px 10px;
-  }
-
-  .about_me,
-.img_me_box {
-    width: 100%;
-  }
-
-  .img_me {
-    height: 400px;
-  }
-
-  /* portfolio section*/
-  .box1,
-.box2,
-.box3,
-.box4,
-.box5 {
-    width: 100%;
-    height: 300px;
-  }
-
-  /* contact section */
-  .social_media_box img {
-    max-width: 60px;
-    padding: 10px 20px;
-  }
-
-  .email {
-    font-size: 0.9rem;
-    margin: 20px 2px;
-  }
-
-  .contact_panel {
-    height: 280px;
-  }
-
-  /* footer section*/
-  .copyright {
-    font-size: 0.7rem;
-  }
-
-  .text {
-    margin: 70px 0;
-  }
-}
-/* media queries */
-@media only screen and (min-width: 770px) and (max-width: 1080px) {
-  /* tablet size*/
-  /* large yellow callout background */
-  header {
-    background-color: #f7d320;
-    height: auto;
-    padding: 180px 0 160px 0px;
-    margin: 0px 0 120px 0;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  /* large desktop size*/
-  /* 'hey there' text */
-  .callout_left {
-    animation-name: movingText;
-    animation-duration: 3s;
-    text-align: left;
-    margin-left: 16%;
-  }
-
-  /* 'nice to see you' text */
-  .callout_right {
-    display: block;
-    text-align: right;
-    animation-name: movingText;
-    animation-duration: 3s;
-    margin: 0 16% 0 10%;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

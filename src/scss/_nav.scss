@@ -1,34 +1,52 @@
 /* nav bar */
 nav {
-    height: 100px;
-    position: fixed;
-    top: 0;
-    overflow: auto;
-    width: 100%;
-    z-index: 2;
-    background-color: $background-color;
-    border-bottom: 4px solid $accent-peach-color;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  z-index: 2;
+  background-color: $background-color;
+  border-bottom: 4px solid $accent-peach-color;
 
-    .nav_links {
-        float: right;
-        a {
-            margin: 40px 0 40px 40px;
-            &:hover {
-                border-bottom: $border-bottom;
-            }    
-        }
+  .nav_links {
+    float: right;
 
-    }
+    a {
+      margin: 40px 0 40px 40px;
 
-    .nav_logo {
-        float: left;
-        width: 200px;
-        height: 100px;
-        margin: auto;
-        background-image: url("../../images/hg_logo.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: left center;
-        display: block;
+      &:hover {
+        border-bottom: $border-bottom;
+      }
     }
   }
+
+  .nav_logo {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    background-image: url("../../images/hg_logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: block;
+  }
+
+  @include responsiveMobile() {
+    height: 90px;
+    .nav_logo {
+      width: 150px;
+      height: 80px;
+      background-position: left bottom;
+    }
+    .nav_links {
+      a {
+        margin: 10px 0 0 0;
+        font-size: 0.9rem;
+        display: block;
+        width: auto;
+      }
+    }
+  }
+}

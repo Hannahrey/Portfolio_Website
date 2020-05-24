@@ -5,8 +5,7 @@
     background-color: $accent-grey-color;
     padding-top: 40px;
     
-    .center_text {
-        text-align: center;
+    
         .contact_panel_a {
             display: block;
             .email {
@@ -29,6 +28,21 @@
                 padding: 20px 30px
             }
         }
+ 
+
+    @include responsiveMobile() {
+        height: 280px;
+      
+      .email {
+        font-size: 0.9rem;
+        margin: 20px 2px;
+      }
+      .social_media_box {
+        img {
+            max-width: 60px;
+            padding: 10px 20px;
+            }
+        } 
     }
 }
   
