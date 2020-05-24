@@ -14,7 +14,7 @@ nav {
         a {
             margin: 40px 0 40px 40px;
             &:hover {
-                border-bottom: 1px solid $body-text-color;
+                border-bottom: $border-bottom;
             }    
         }
 

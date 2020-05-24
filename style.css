@@ -494,37 +494,3 @@ footer {
     }
 }
 
-/* media queries */
-@media only screen and (min-width: 770px) and (max-width: 1080px) {
-  /* tablet size*/
-  /* large yellow callout background */
-header {
-  background-color: #f7d320;
-  height: auto;
-  padding: 180px 0 160px 0px;
-  margin: 0px 0 120px 0;
-  }
-}
-
-  
-@media only screen and (min-width: 1600px) {
-  /* large desktop size*/
-  
-  /* 'hey there' text */
-  .callout_left {
-    animation-name: movingText;
-    animation-duration: 3s;
-    text-align: left;
-    margin-left: 16%;
-  }
-   
-  /* 'nice to see you' text */
-  .callout_right {
-    display: block;
-    text-align: right;
-    animation-name: movingText;
-    animation-duration: 3s;
-    margin: 0 16% 0 10%;
-  }
-  
-} */

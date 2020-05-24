@@ -174,7 +174,9 @@ header .callout .callout_right {
 }
 .my_work_panel .portfolio_box .box .overlay .overlay_contents .text {
   margin-bottom: 40px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
 }
 .my_work_panel .portfolio_box .box .overlay .overlay_contents .portfolio_link {
   padding: 0.5rem;
@@ -252,6 +254,29 @@ header .callout .callout_right {
   padding: 20px 30px;
 }
 
+/* footer section */
+footer {
+  background-color: #f7d320;
+  height: 50px;
+  overflow: auto;
+}
+footer .copyright {
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Futura", "Jost", sans-serif;
+  font-size: 0.8rem;
+  float: left;
+  margin: 11px auto;
+}
+footer .move_to {
+  float: right;
+  margin: 16px auto;
+  font-weight: 700;
+}
+footer .move_to:hover {
+  border-bottom: 1px solid #000000;
+}
+
 /* container to set width of page content */
 .container_main {
   margin: auto;
@@ -268,6 +293,129 @@ header .callout .callout_right {
   height: 120px;
   visibility: hidden;
   pointer-events: none;
+}
+
+/* media queries */
+@media only screen and (max-width: 770px) {
+  /* mobile size*/
+  /* container to set width of page content */
+  .container_main {
+    margin: auto;
+    width: 90%;
+  }
+
+  /* nav bar section*/
+  nav {
+    height: 90px;
+  }
+  nav .nav_logo {
+    width: 150px;
+    height: 75px;
+    background-position: left bottom;
+  }
+  nav .nav_links a {
+    margin: 10px 0 0 0;
+    font-size: 0.9rem;
+    display: block;
+    width: auto;
+  }
+
+  /* yellow callout section*/
+  /* 'hey there' text */
+  header {
+    padding: 100px 0 80px 0;
+    margin: 0px 0 60px 0;
+  }
+  header .callout, header h2 {
+    font-size: 3rem;
+    line-height: 5rem;
+    /* 'hey there' text */
+    /* 'nice to see you' text */
+  }
+  header .callout .callout_left, header h2 .callout_left {
+    margin: 10% 0 0 12%;
+  }
+  header .callout .callout_right, header h2 .callout_right {
+    margin: 5% 10% 0 10%;
+  }
+
+  /* about me section*/
+  .about_me_box {
+    margin: 10px 10px 150px 10px;
+  }
+
+  .about_me,
+.img_me_box {
+    width: 100%;
+  }
+
+  .img_me {
+    height: 400px;
+  }
+
+  /* portfolio section*/
+  .box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* contact section */
+  .social_media_box img {
+    max-width: 60px;
+    padding: 10px 20px;
+  }
+
+  .email {
+    font-size: 0.9rem;
+    margin: 20px 2px;
+  }
+
+  .contact_panel {
+    height: 280px;
+  }
+
+  /* footer section*/
+  .copyright {
+    font-size: 0.7rem;
+  }
+
+  .text {
+    margin: 70px 0;
+  }
+}
+/* media queries */
+@media only screen and (min-width: 770px) and (max-width: 1080px) {
+  /* tablet size*/
+  /* large yellow callout background */
+  header {
+    background-color: #f7d320;
+    height: auto;
+    padding: 180px 0 160px 0px;
+    margin: 0px 0 120px 0;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* large desktop size*/
+  /* 'hey there' text */
+  .callout_left {
+    animation-name: movingText;
+    animation-duration: 3s;
+    text-align: left;
+    margin-left: 16%;
+  }
+
+  /* 'nice to see you' text */
+  .callout_right {
+    display: block;
+    text-align: right;
+    animation-name: movingText;
+    animation-duration: 3s;
+    margin: 0 16% 0 10%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

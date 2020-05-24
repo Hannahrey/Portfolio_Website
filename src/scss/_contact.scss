@@ -15,7 +15,7 @@
                 margin-top: 18px;
                 /* to add underline, when you hover over the email: */
                 &:hover {
-                    border-bottom: 1px solid $body-text-color;
+                    border-bottom: $border-bottom;
                 }    
             }
         }
