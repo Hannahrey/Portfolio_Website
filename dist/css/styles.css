@@ -110,6 +110,8 @@ nav {
   border-bottom: 4px solid #ffe2d1;
 }
 nav .main-menu {
+  width: 76%;
+  margin: auto;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -150,6 +152,7 @@ nav .main-menu .nav_logo {
     min-height: 90px;
   }
   nav .main-menu {
+    width: 100%;
     /* Button styling */
   }
   nav .main-menu .menu-toggle {

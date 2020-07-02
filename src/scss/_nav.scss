@@ -9,6 +9,8 @@ nav {
   border-bottom: 4px solid $accent-peach-color;
 
   .main-menu {
+    width: 76%;
+    margin: auto;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -53,6 +55,7 @@ nav {
     height: auto;
     min-height: 90px;
     .main-menu {
+      width: 100%;
       /* Button styling */
       .menu-toggle {
         display: inline-block;
