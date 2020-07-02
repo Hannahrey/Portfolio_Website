@@ -1,15 +1,13 @@
-@import '_media_queries';
-@import '_variables';
-@import '_typography';
-@import '_portfolio_page';
-@import '_nav';
-@import '_intro_banner';
-@import '_about_me';
-@import '_portfolio_section';
-@import '_contact';
-@import '_footer';
-
-
+@import "_media_queries";
+@import "_variables";
+@import "_typography";
+@import "_portfolio_page";
+@import "_nav";
+@import "_intro_banner";
+@import "_about_me";
+@import "_portfolio_section";
+@import "_contact";
+@import "_footer";
 
 /* container to set width of page content */
 .container_main {
@@ -41,7 +39,6 @@
   border: 1px solid $body-text-color;
 }
 
-
 /* pseudo element to ensure the anchor tag goes to top of section (as fixed header was blocking this before): */
 #about::before,
 #portfolio::before,
@@ -53,4 +50,3 @@
   visibility: hidden;
   pointer-events: none;
 }
-
