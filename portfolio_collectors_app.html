@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
     <title>Hannah Golightly - Collector's App</title>
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="dist/css/styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2f7cf47e2f.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 </head>
 
 <body>
     <!-- top nav bar -->
     <nav>
-        <!-- "container main"" sets the width of the content -->
-        <div class="container_main">
+        <div class="main-menu">
             <a href="./index.html#" class="nav_logo"></a>
-            <div class="nav_links">
-                <a href="./index.html#about">About Me</a>
-                <a href="./index.html#portfolio">My Work</a>
-                <a href="./index.html#contact">Contact</a>
+            <a href="#nav_links" id="main-menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </a>
+            <div id="nav_links" class="nav_links">
+                <a href="#main-menu-toggle" id="main-menu-close" class="menu-close">
+                    <i class="fas fa-times"></i>
+                </a>
+                <ul>
+                    <li><a href="./index.html#about">About Me</a></li>
+                    <li><a href="./index.html#portfolio">My Work</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                </ul>
             </div>
+            <a href="#main-menu-toggle" class="backdrop" hidden></a>
         </div>
     </nav>
 
     <!-- project section -->
-        <div class="project_section">
-             <div class="project_link_panel">
-                <div class="container_main">
-                    <h3 id="collectors_app">Collectors App</h3>
-                    <p>For this task I created a site showcasing a collection of cocktails, which also allows the user to add new entries to the collection. This used HTML/CSS on the front-end; and SQL and PHP on the back-end, with MySQL to manage the cocktail database.</p>
-                    <a class="portfolio_link" href="https://github.com/hannahgolightly/collectors-task" target="_blank"> View Code on github
-                    </a>
-                    <a class="portfolio_link" href="https://dev.maydenacademy.co.uk/students/2020/feb/hannah/collectors-task/" target="_blank">View Site</a>
-                </div>
-            </div>
-            <div class="portfolio_main_image_box">
-                <img src="images/macbook_collectors_app.png" alt="Collectors App page"/>
-            </div>
+    <div class="project_section">
+        <div class="project_link_panel">
             <div class="container_main">
-                <a class="move_to" href="./index.html#portfolio">Go back</a>
-            </div> 
-        </div>      
-                
+                <h3 id="collectors_app">Collectors App</h3>
+                <p>For this task I created a site showcasing a collection of cocktails, which also allows the user to
+                    add new entries to the collection. This used HTML/CSS on the front-end; and SQL and PHP on the
+                    back-end, with MySQL to manage the cocktail database.</p>
+                <a class="portfolio_link" href="https://github.com/hannahgolightly/collectors-task" target="_blank">
+                    View Code on github
+                </a>
+                <a class="portfolio_link"
+                    href="https://dev.maydenacademy.co.uk/students/2020/feb/hannah/collectors-task/"
+                    target="_blank">View Site</a>
+            </div>
+        </div>
+        <div class="portfolio_main_image_box">
+            <img src="images/macbook_collectors_app.png" alt="Collectors App page" />
+        </div>
+        <div class="container_main">
+            <a class="move_to" href="./index.html#portfolio">Go back</a>
+        </div>
+    </div>
+
 
 
     <!-- contact section -->
-	<div id="contact"></div>
-	<div class="contact_panel">
-		<div class="container_main">
-			<div class="center_text">
-				<h3>Get in touch</h3>
-				<p>I'd love to hear from you!</p>
-				<div class="contact_panel_a">
-					<a class="email" href="mailto:hannah.golightly02@gmail.com?subject=hello">hannah.golightly02@gmail.com</a>
-				</div>
-				<div class="social_media_box">
-					<a href="https://github.com/hannahgolightly" target="_blank">
-						<img src="./images/GitHub-Mark-120px-plus.png" alt="GitHub-Logo"/>
-					</a>
-				</div>
-				<div class="social_media_box">
-					<a href="https://www.linkedin.com/in/hannah-g-2b053452/" target="_blank">
-						<img src="./images/linkedin.png" alt="Linkedin-Logo"/>
-					</a>
-				</div>
-			</div>
-		</div>
+    <div id="contact"></div>
+    <div class="contact_panel">
+        <div class="container_main">
+            <div class="center_text">
+                <h3>Get in touch</h3>
+                <p>I'd love to hear from you!</p>
+                <div class="contact_panel_a">
+                    <a class="email"
+                        href="mailto:hannah.golightly02@gmail.com?subject=hello">hannah.golightly02@gmail.com</a>
+                </div>
+                <div class="social_media_box">
+                    <a href="https://github.com/hannahgolightly" target="_blank">
+                        <img src="./images/GitHub-Mark-120px-plus.png" alt="GitHub-Logo" />
+                    </a>
+                </div>
+                <div class="social_media_box">
+                    <a href="https://www.linkedin.com/in/hannah-g-2b053452/" target="_blank">
+                        <img src="./images/linkedin.png" alt="Linkedin-Logo" />
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
     <!-- footer section with copyright and link to go back to top of page -->
     <footer>
         <div class="container_main">
@@ -78,4 +94,5 @@
     </footer>
 
 </body>
+
 </html>
