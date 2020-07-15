@@ -1,138 +1,128 @@
 /* portfolio section */
 
 .my_work_panel {
-    background-color: $accent-grey-color;
-    .portfolio_box {
+  background-color: $accent-grey-color;
+  .portfolio_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 150px 0;
+
+    .box {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // border: 3px solid $accent-grey-color;
+      box-sizing: border-box;
+
+      .box_image {
+        max-height: 100%;
+        max-width: 100%;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 10px 0 150px 0;
+        align-items: center;
+        justify-content: center;
 
-        .box{
-            padding: 0;
-            margin: 0;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // border: 3px solid $accent-grey-color;
-            box-sizing: border-box;
+        /* content within the overlays on boxes */
+        .overlay_contents {
+          margin: auto;
+          width: 80%;
+          text-align: center;
 
-            .box_image {
-                max-height: 100%;
-                max-width: 100%;
-            }
-            
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 100%;
-                width: 100%;
-                opacity: 0;
-                transition: .5s ease;
-              
-                display: flex;
-                align-items: center;
-                justify-content: center;
+          .text,
+          .portfolio_link {
+            transform: translateY(-30px);
+            transition: transform 0.5s ease-out;
+          }
+          .text {
+            margin-bottom: 40px;
+            font-size: 1.2rem;
+            font-weight: $font-weight-bold;
+            line-height: 1.5rem;
+          }
+          .portfolio_link {
+            transition-duration: 0.3s;
+          }
+        }
+      }
 
-                /* content within the overlays on boxes */
-                .overlay_contents {
-                    margin: auto;
-                    width: 80%;
-                    text-align: center;
+      &.large_box {
+        width: 50%;
+        height: 500px;
+      }
+      &.small_box {
+        width: 33.333%;
+        height: 350px;
+        @include responsiveMobile() {
+          width: 100%;
+        }
+      }
 
-                    .text, .portfolio_link{
-                        transform: translateY(-30px);
-                        transition: transform .5s ease-out;
-                    }
-                    .text {
-                        margin-bottom: 40px;
-                        font-size: 1.2rem;
-                        font-weight: $font-weight-bold;
-                        line-height: 1.5rem;
-                    }
-                    .portfolio_link {
-                        transition-duration: .3s;
-                    }
-                }   
-            }
+      &.box_no_background {
+        background-color: $background-color;
+      }
+      &.box_post_railings {
+        background-color: #4d3e10;
+      }
+      &.box_estate_agents {
+        background-color: #344354;
+      }
+      &.box_card_game {
+        background-color: #f7f7ff;
+      }
+      &.box_finance_calc {
+        background-color: #0c5865;
+      }
+      &.taco_api {
+        background-color: #f5d418;
+      }
+      &.box_biscuit_app {
+        background-color: #faed69;
+      }
 
-            &.large_box{
-                width: 50%;
-                height: 500px;
+      /* portfolio- when hover over, images: */
+      &:hover {
+        .overlay {
+          opacity: 0.7;
+          .overlay_contents {
+            .text,
+            .portfolio_link {
+              transform: translateY(0);
             }
-            &.small_box{
-                width: 33.333%;
-                height: 350px;
-                @include responsiveMobile(){
-                    width: 100%;
-                }
-            }
-
-            &.box_no_background {
-                background-color: $background-color;
-            }
-            &.box_post_railings {
-                background-color: #4D3E10;
-            } 
-            &.box_estate_agents {
-                background-color: #344354;
-            }
-            &.box_card_game {
-                background-color: #F7F7FF;
-            } 
-            &.box_finance_calc {
-                background-color: #0C5865;
-            }
-            &.taco_api {
-                background-color: #f5d418;
-            }
-            
-
-            /* portfolio- when hover over, images: */
-            &:hover{
-                .overlay{
-                    opacity: 0.7;
-                    .overlay_contents {
-                        .text, .portfolio_link{
-                            transform: translateY(0);
-                        }
-                    }
-                }
-            }
-            &:nth-child(3n+1) .overlay {
-                background-color: $accent-peach-color;
-            }
-            &:nth-child(3n+2) .overlay {
-                background-color: $main-yellow-color;
-            }
-            &:nth-child(3n+3) .overlay {
-                background-color: $accent-grey-color;
-            }
-            @include responsiveMobile() {
-                &.large_box, &.small_box {
-                    width: 100%;
-                    height: 350px;
-                }
-            }
-        }          
+          }
+        }
+      }
+      &:nth-child(3n + 1) .overlay {
+        background-color: $accent-peach-color;
+      }
+      &:nth-child(3n + 2) .overlay {
+        background-color: $main-yellow-color;
+      }
+      &:nth-child(3n + 3) .overlay {
+        background-color: $accent-grey-color;
+      }
+      @include responsiveMobile() {
+        &.large_box,
+        &.small_box {
+          width: 100%;
+          height: 350px;
+        }
+      }
     }
+  }
 }
-  
-  
-
- 
-
-
-  
-
-  
-
-  
-  
-  
-
-  
